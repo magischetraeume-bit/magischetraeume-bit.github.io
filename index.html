@@ -1,46 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magische Traeume - Developer Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imre Creative Studio | Android App Development</title>
+  <meta name="description" content="Imre Creative Studio creates original Android applications combining useful tools, thoughtful design and modern technology.">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-    <h1>Magische Traeume</h1>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="index.html">Imre <span class="blue">Creative Studio</span></a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#apps" data-i18n="navApps">Applications</a>
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </div>
+        <select id="languageSelect" class="language-select" aria-label="Language">
+          <option value="en">EN</option><option value="hu">HU</option><option value="de">DE</option><option value="fr">FR</option>
+        </select>
+      </div>
+    </nav>
+  </div>
+</header>
 
-    <p>Developer website for our Android applications.</p>
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="eyebrow" data-i18n="eyebrow">Independent Android App Developer</div>
+        <h1><span data-i18n="heroTitle1">Smart apps. Clear design.</span><br><span class="accent" data-i18n="heroTitle2">Real-world ideas.</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">Imre Creative Studio creates Android applications that combine practical tools, thoughtful design and modern technology.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#apps" data-i18n="exploreApps">Explore Apps</a>
+          <a class="button button-secondary" href="#contact" data-i18n="contactButton">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-   
-  
-  
-<h2>Applications</h2>
+  <section id="apps">
+    <div class="container">
+      <div class="section-heading">
+        <h2 data-i18n="appsTitle">Apps by Imre Creative Studio</h2>
+        <p data-i18n="appsIntro">Explore our Android applications available on Google Play and see what's coming next.</p>
+      </div>
 
-<p>
-    <a href="https://play.google.com/store/apps/details?id=com.imre.carpnavx">
-        CarpNavX – Auslege-Navigation
-    </a>
-</p>
+      <div class="apps-grid">
+        <article class="app-card" data-page="apps/carpnavx.html" tabindex="0" role="link" aria-label="CarpNavX details">
+          <img class="app-logo" src="images/carpnavx.png" alt="CarpNavX">
+          <h3>CarpNavX</h3>
+          <p data-i18n="carpDescription">GPS navigation for boat anglers: approach feeding spots precisely, return more directly to your Home point, and save important water features, depths, obstacles and routes.</p>
+          <div class="card-actions">
+            <span class="details-link" data-i18n="details">Details →</span>
+            <a class="app-link" href="https://play.google.com/store/apps/details?id=com.imre.carpnavx" target="_blank" rel="noopener noreferrer"><span data-i18n="googlePlay">Google Play</span> →</a>
+          </div>
+        </article>
 
-<p>
-    <a href="https://play.google.com/store/apps/details?id=com.imre.lottorandomgenerator">
-        AI Lotto Zahlen Generator
-    </a>
-</p>
+        <article class="app-card" data-page="apps/ai-lotto.html" tabindex="0" role="link" aria-label="AI Lotto details">
+          <img class="app-logo" src="images/ai-lotto.png" alt="AI Lotto">
+          <h3>AI Lotto</h3>
+          <p class="app-subtitle" data-i18n="lottoSubtitle">AI lottery number combination generator</p>
+          <p data-i18n="lottoDescription">Generate lottery combinations with true randomness, intelligent filters, mathematical methods and AI-assisted support — according to your own rules.</p>
+          <div class="card-actions">
+            <span class="details-link" data-i18n="details">Details →</span>
+            <a class="app-link" href="https://play.google.com/store/apps/details?id=com.imre.lottorandomgenerator" target="_blank" rel="noopener noreferrer"><span data-i18n="googlePlay">Google Play</span> →</a>
+          </div>
+        </article>
 
-<p>
-    <a href="https://play.google.com/store/apps/details?id=com.imre.catchmastertracker">
-        Catch Master – Smart Angeln
-    </a>
-</p>
+        <article class="app-card" data-page="apps/catch-master.html" tabindex="0" role="link" aria-label="Catch Master details">
+          <img class="app-logo" src="images/catch-master.png" alt="Catch Master">
+          <h3>Catch Master</h3>
+          <p data-i18n="catchDescription">A smart fishing diary that helps you analyse catches, spots, weather, seasons and session results — so your own data can improve your fishing over time.</p>
+          <div class="card-actions">
+            <span class="details-link" data-i18n="details">Details →</span>
+            <a class="app-link" href="https://play.google.com/store/apps/details?id=com.imre.catchmastertracker" target="_blank" rel="noopener noreferrer"><span data-i18n="googlePlay">Google Play</span> →</a>
+          </div>
+        </article>
 
-<p>
-    <a href="https://play.google.com/store/apps/details?id=com.imre.cryptowallpapers">
-        Cyberpunk Wallpaper Animiert
-    </a>
-</p>
+        <article class="app-card" data-page="apps/cyberpunk-wallpaper.html" tabindex="0" role="link" aria-label="Cyberpunk Wallpaper details">
+          <img class="app-logo" src="images/cyberpunk-wallpaper.png" alt="Cyberpunk Wallpaper">
+          <h3>Cyberpunk Wallpaper</h3>
+          <p data-i18n="wallpaperDescription">AI-generated live and static 4K/HD wallpapers in cyberpunk, fantasy, sci-fi, spiritual and hacker-inspired styles — designed to give your phone a real visual upgrade.</p>
+          <div class="card-actions">
+            <span class="details-link" data-i18n="details">Details →</span>
+            <a class="app-link" href="https://play.google.com/store/apps/details?id=com.imre.cryptowallpapers" target="_blank" rel="noopener noreferrer"><span data-i18n="googlePlay">Google Play</span> →</a>
+          </div>
+        </article>
 
-    <h2>Contact</h2>
+        <article class="app-card coming-soon" data-page="apps/xenoria.html" tabindex="0" role="link" aria-label="Xenoria details">
+          <div class="badge" data-i18n="comingSoon">Coming Soon</div>
+          <img class="app-logo" src="images/xenoria.png" alt="Xenoria">
+          <h3>Xenoria</h3>
+          <p data-i18n="xenoriaDescription">The latest generation of dream journals.</p>
+          <div class="card-actions">
+            <span class="details-link" data-i18n="details">Details →</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <p>For questions regarding our applications, please use the contact information provided on Google Play.</p>
+  <section id="about">
+    <div class="container">
+      <div class="about-box">
+
+        <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:18px;">
+          <img
+            src="images/svajc.png"
+            alt="Switzerland"
+            style="width:48px;height:48px;object-fit:cover;border-radius:10px;box-shadow:0 8px 22px rgba(0,0,0,.25);">
+          <span
+            data-i18n="swissBadge"
+            style="color:#a8c5ff;font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;">
+            Developed in Switzerland
+          </span>
+        </div>
+
+        <h2 data-i18n="aboutTitle">
+          About Imre Creative Studio
+        </h2>
+
+        <p data-i18n="aboutDescription">
+          Imre Creative Studio is an independent Android app development studio based in Switzerland. We create original applications designed to solve real-world needs – from fishing and data-driven tools to AI-powered features, dream journaling and meditation.
+        </p>
+
+        <p
+          data-i18n="aboutDescription2"
+          style="margin-top:16px;">
+          We focus on reliable performance, clear structure, thoughtful design and long-term value. Our projects are continuously improved, refined and expanded. If you have a question or need support, you can contact us directly.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <h2 data-i18n="contactTitle">Contact</h2>
+        <p data-i18n="contactDescription">Questions, support or business inquiries? Get in touch with Imre Creative Studio.</p>
+        <a class="email-link" href="mailto:contact.imrecreativestudio@gmail.com">contact.imrecreativestudio@gmail.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container">© 2026 Imre Creative Studio · <span data-i18n="footerText">Android App Development</span></div></footer>
+
+<script>
+window.translations = {
+  en:{
+    navApps:"Applications",navAbout:"About",navContact:"Contact",eyebrow:"Independent Android App Developer",
+    heroTitle1:"Smart apps. Clear design.",heroTitle2:"Real-world ideas.",
+    heroDescription:"Imre Creative Studio creates Android applications that combine practical tools, thoughtful design and modern technology.",
+    exploreApps:"Explore Apps",contactButton:"Contact",appsTitle:"Apps by Imre Creative Studio",
+    appsIntro:"Explore our Android applications available on Google Play and see what's coming next.",
+    details:"Details →",googlePlay:"Google Play",lottoSubtitle:"AI lottery number combination generator",
+    carpDescription:"GPS navigation for boat anglers: approach feeding spots precisely, return more directly to your Home point, and save important water features, depths, obstacles and routes.",lottoDescription:"Generate lottery combinations with true randomness, intelligent filters, mathematical methods and AI-assisted support — according to your own rules.",
+    catchDescription:"A smart fishing diary that helps you analyse catches, spots, weather, seasons and session results — so your own data can improve your fishing over time.",wallpaperDescription:"AI-generated live and static 4K/HD wallpapers in cyberpunk, fantasy, sci-fi, spiritual and hacker-inspired styles — designed to give your phone a real visual upgrade.",
+    xenoriaDescription:"The latest generation of dream journals.",comingSoon:"Coming Soon",
+    swissBadge:"Developed in Switzerland",
+    aboutTitle:"About Imre Creative Studio",
+    aboutDescription:"Imre Creative Studio is an independent Android app development studio based in Switzerland. We create original applications designed to solve real-world needs – from fishing and data-driven tools to AI-powered features, dream journaling and meditation.",
+    aboutDescription2:"We focus on reliable performance, clear structure, thoughtful design and long-term value. Our projects are continuously improved, refined and expanded. If you have a question or need support, you can contact us directly.",
+    contactTitle:"Contact",contactDescription:"Questions, support or business inquiries? Get in touch with Imre Creative Studio.",
+    footerText:"Android App Development"
+  },
+  hu:{
+    navApps:"Alkalmazások",navAbout:"Rólunk",navContact:"Kapcsolat",eyebrow:"Független Android alkalmazásfejlesztő",
+    heroTitle1:"Okos alkalmazások. Letisztult dizájn.",heroTitle2:"Valódi ötletek.",
+    heroDescription:"Az Imre Creative Studio olyan Android alkalmazásokat készít, amelyek praktikus megoldásokat, átgondolt dizájnt és modern technológiát ötvöznek.",
+    exploreApps:"Alkalmazások",contactButton:"Kapcsolat",appsTitle:"Az Imre Creative Studio alkalmazásai",
+    appsIntro:"Fedezd fel a Google Playen elérhető Android alkalmazásainkat, és nézd meg, milyen új projektek készülnek.",
+    details:"Részletek →",googlePlay:"Google Play",lottoSubtitle:"AI lottószám-kombináció generátor",
+    carpDescription:"GPS-navigáció csónakos horgászoknak: pontosan közelítsd meg az etetési pontot, térj vissza egyenesebben a Home ponthoz, és mentsd el a víz fontos pontjait, mélységeit, akadályait és útvonalait.",lottoDescription:"Készíts lottószám-kombinációkat valódi véletlenszerűséggel, intelligens szűrőkkel, matematikai módszerekkel és AI-alapú támogatással — a saját szabályaid szerint.",
+    catchDescription:"Egy okos horgásznapló, amely segít elemezni a fogásokat, helyeket, időjárást, évszakokat és horgászataid eredményeit — hogy a saját adataid hosszú távon javítsák a horgászatodat.",wallpaperDescription:"AI által készített élő és statikus 4K/HD háttérképek cyberpunk, fantasy, sci-fi, spirituális és hacker stílusban — hogy a telefonod valódi vizuális frissítést kapjon.",
+    xenoriaDescription:"Az álomnaplók legújabb generációja.",comingSoon:"Hamarosan",
+    swissBadge:"Svájcban fejlesztve",
+    aboutTitle:"Az Imre Creative Studio-ról",
+    aboutDescription:"Az Imre Creative Studio egy Svájcban működő, független Android alkalmazásfejlesztő stúdió. Olyan saját alkalmazásokat készítünk, amelyek valódi problémákra adnak praktikus megoldásokat – a horgászattól és adatfeldolgozástól az AI-alapú eszközökön át az álomnaplózásig és meditációig.",
+    aboutDescription2:"A fejlesztés során számunkra fontos a megbízható működés, az átlátható felépítés, a letisztult használat és az, hogy az alkalmazások hosszú távon is valódi értéket adjanak. A projekteket folyamatosan fejlesztjük, javítjuk és bővítjük. Kérdés vagy támogatási igény esetén közvetlenül elérhetőek vagyunk.",
+    contactTitle:"Kapcsolat",contactDescription:"Kérdésed van, támogatásra van szükséged vagy üzleti ügyben keresel minket? Lépj kapcsolatba az Imre Creative Studio-val.",
+    footerText:"Android alkalmazásfejlesztés"
+  },
+  de:{
+    navApps:"Apps",navAbout:"Über uns",navContact:"Kontakt",eyebrow:"Unabhängiger Android-App-Entwickler",
+    heroTitle1:"Smarte Apps. Klares Design.",heroTitle2:"Ideen für den Alltag.",
+    heroDescription:"Imre Creative Studio entwickelt Android-Apps, die praktische Werkzeuge, durchdachtes Design und moderne Technologie miteinander verbinden.",
+    exploreApps:"Apps entdecken",contactButton:"Kontakt",appsTitle:"Apps von Imre Creative Studio",
+    appsIntro:"Entdecke unsere Android-Apps bei Google Play und erfahre, welche neuen Projekte gerade entstehen.",
+    details:"Details →",googlePlay:"Google Play",lottoSubtitle:"KI-Lotto-Zahlenkombinationsgenerator",
+    carpDescription:"GPS-Navigation für Bootsangler: Futterplätze präzise anfahren, geradliniger zum Home-Punkt zurückkehren und Gewässerpunkte, Tiefen, Hindernisse und Routen speichern.",lottoDescription:"Erstelle Lottozahlen mit echter Zufälligkeit, intelligenten Filtern, mathematischen Kombinationen und KI-gestützter Unterstützung – flexibel nach deinen eigenen Regeln.",
+    catchDescription:"Ein smartes Angeltagebuch, das Fänge, Spots, Wetter, Jahreszeiten und Session-Ergebnisse analysiert – damit deine eigenen Daten deine Ergebnisse langfristig verbessern.",wallpaperDescription:"KI-generierte Live- und statische 4K/HD-Hintergrundbilder in Cyberpunk-, Fantasy-, Sci-Fi-, spirituellem und Hacker-Stil – für ein echtes visuelles Upgrade deines Handys.",
+    xenoriaDescription:"Die neueste Generation von Traumtagebüchern.",comingSoon:"Demnächst",
+    swissBadge:"Entwickelt in der Schweiz",
+    aboutTitle:"Über Imre Creative Studio",
+    aboutDescription:"Imre Creative Studio ist ein unabhängiges Android-App-Entwicklungsstudio mit Sitz in der Schweiz. Wir entwickeln eigene Anwendungen, die praktische Lösungen für reale Anforderungen bieten – von Angeln und datenbasierten Werkzeugen über KI-gestützte Funktionen bis hin zu Traumtagebuch und Meditation.",
+    aboutDescription2:"Bei der Entwicklung legen wir Wert auf zuverlässige Funktion, klare Strukturen, einfache Bedienung und langfristigen Nutzen. Unsere Projekte werden kontinuierlich weiterentwickelt, verbessert und erweitert. Bei Fragen oder Support-Anliegen kannst du uns direkt kontaktieren.",
+    contactTitle:"Kontakt",contactDescription:"Fragen, Support oder geschäftliche Anfragen? Kontaktiere Imre Creative Studio.",
+    footerText:"Android-App-Entwicklung"
+  },
+  fr:{
+    navApps:"Applications",navAbout:"À propos",navContact:"Contact",eyebrow:"Développeur indépendant d'applications Android",
+    heroTitle1:"Applications intelligentes. Design épuré.",heroTitle2:"Idées concrètes.",
+    heroDescription:"Imre Creative Studio crée des applications Android qui associent des outils pratiques, un design réfléchi et des technologies modernes.",
+    exploreApps:"Découvrir les applications",contactButton:"Contact",appsTitle:"Les applications d'Imre Creative Studio",
+    appsIntro:"Découvrez nos applications Android disponibles sur Google Play ainsi que nos prochains projets.",
+    details:"Détails →",googlePlay:"Google Play",lottoSubtitle:"Générateur IA de combinaisons de numéros de loterie",
+    carpDescription:"Navigation GPS pour la pêche en bateau : rejoignez précisément vos postes d’amorçage, revenez plus directement au point Home et enregistrez les points, profondeurs, obstacles et itinéraires du plan d’eau.",lottoDescription:"Créez des combinaisons de loterie avec un véritable hasard, des filtres intelligents, des méthodes mathématiques et une assistance IA — selon vos propres règles.",
+    catchDescription:"Un journal de pêche intelligent qui analyse vos captures, vos postes, la météo, les saisons et les résultats de vos sessions — afin que vos propres données améliorent durablement votre pêche.",wallpaperDescription:"Des fonds d’écran 4K/HD animés et statiques générés par IA, dans des styles cyberpunk, fantasy, science-fiction, spirituels et hacker — pour offrir à votre téléphone un véritable upgrade visuel.",
+    xenoriaDescription:"La nouvelle génération de journaux de rêves.",comingSoon:"Bientôt",
+    swissBadge:"Développé en Suisse",
+    aboutTitle:"À propos d'Imre Creative Studio",
+    aboutDescription:"Imre Creative Studio est un studio indépendant de développement d'applications Android basé en Suisse. Nous créons des applications originales conçues pour répondre à des besoins concrets – de la pêche et des outils basés sur les données aux fonctions assistées par IA, au journal de rêves et à la méditation.",
+    aboutDescription2:"Nous accordons une grande importance à la fiabilité, à une structure claire, à une utilisation intuitive et à une valeur durable. Nos projets sont continuellement améliorés, optimisés et enrichis. Pour toute question ou demande d’assistance, vous pouvez nous contacter directement.",
+    contactTitle:"Contact",contactDescription:"Une question, besoin d'assistance ou une demande professionnelle ? Contactez Imre Creative Studio.",
+    footerText:"Développement d'applications Android"
+  }
+};
+</script>
+<script src="assets/site.js"></script>
 </body>
 </html>
